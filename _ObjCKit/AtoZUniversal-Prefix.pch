@@ -1,0 +1,25 @@
+
+#ifndef AtoZUniversal_AtoZUniversal_Prefix_pch
+#define AtoZUniversal_AtoZUniversal_Prefix_pch
+
+  #ifdef __OBJC__
+
+    #import <_ObjC.h>
+//    #import <ObjcAssociatedObjectHelpers.h>
+    #import <ObjcAssociatedObjectHelpers.h>
+    #import <metamacros.h>
+    #import <AtoZMacroDefines.h>
+    #import <JREnum.h>
+    #import <EXTConcreteProtocol.h>
+    #import <AtoZTypes.h>
+    #import <BaseModel.h>
+    #import <F.h>
+    #import <EXTConcreteProtocol.h>
+    #import <objswitch.h>
+    #import <AtoZGeometry.h>
+
+    #import <Protocols.h>
+    
+  #endif // __OBJC__
+
+#endif // AtoZUniversal_AtoZUniversal_Prefix_pch

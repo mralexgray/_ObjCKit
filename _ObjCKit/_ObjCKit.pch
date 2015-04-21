@@ -1,0 +1,32 @@
+//
+//  _ObjCKit.pch
+//  _ObjCKit
+//
+//  Created by Alex Gray on 4/21/15.
+//  Copyright (c) 2015 Alex Gray. All rights reserved.
+//
+
+#ifndef _ObjCKit__ObjCKit_pch
+#define _ObjCKit__ObjCKit_pch
+
+#import <Foundation/Foundation.h>
+#import "_ObjC.h"
+#import "metamacros.h"
+#import "AtoZMacroDefines.h"
+#import "JREnum.h"
+#import "EXTConcreteProtocol.h"
+#import "AtoZTypes.h"
+
+
+//#import "ObjcAssociatedObjectHelpers.h"
+
+//#import <BaseModel.h>
+//#import <F.h>
+#import "EXTConcreteProtocol.h"
+//#import <objswitch.h>
+#import "AtoZGeometry.h"
+
+#import "Protocols.h"
+#import "_ObjCKit.h"
+
+#endif
