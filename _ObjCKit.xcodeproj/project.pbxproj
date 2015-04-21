@@ -850,6 +850,7 @@
 				7B3AA6851AE6827600786B7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7B3AA6861AE6827600786B7A /* Build configuration list for PBXNativeTarget "_ObjCKitTests" */ = {
 			isa = XCConfigurationList;
@@ -858,6 +859,7 @@
 				7B3AA6881AE6827600786B7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
