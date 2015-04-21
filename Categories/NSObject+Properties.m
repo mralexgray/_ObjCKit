@@ -403,7 +403,9 @@ static const char* getPropertyType    (objc_property_t property) 	{
 
 	return result;
 }
-- (NSD*) propertiesPlease								{
+- (NSD*) propertiesPlease								{ return @{};
+
+#ifdef FUNSIZE
 
 	return [[[self.propertyNames map:^id (NSS *name) { SEL select = NULL;
 		if ((select = [self getterForPropertyNamed:name]) != NULL) return nil;
@@ -414,6 +416,9 @@ static const char* getPropertyType    (objc_property_t property) 	{
 	}] mapToDictionary:^id (id object) {
 		return [self performSelectorWithoutWarnings:NSSelectorFromString(object)];
 	}];
+
+#endif
+
 /*
 		NSMD *props = NSMD.new;
 		unsigned outCount, i;

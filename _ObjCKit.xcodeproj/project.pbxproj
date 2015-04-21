@@ -130,7 +130,7 @@
 		7B3AA65D1AE680B100786B7A /* _ObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = _ObjC.xcodeproj; path = External/_ObjC/_ObjC.xcodeproj; sourceTree = "<group>"; };
 		7B3AA66F1AE6827500786B7A /* _ObjCKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = _ObjCKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3AA6731AE6827500786B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B3AA6741AE6827500786B7A /* _ObjCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = _ObjCKit.h; sourceTree = "<group>"; };
+		7B3AA6741AE6827500786B7A /* _ObjCKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = _ObjCKit.h; path = _ObjCKit/_ObjCKit.h; sourceTree = "<group>"; };
 		7B3AA67A1AE6827600786B7A /* _ObjCKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = _ObjCKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B3AA6801AE6827600786B7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B3AA6811AE6827600786B7A /* _ObjCKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _ObjCKitTests.m; sourceTree = "<group>"; };
@@ -236,27 +236,12 @@
 		7B3AA6511AE67F9A00786B7A = {
 			isa = PBXGroup;
 			children = (
-				7B3AA7391AE689B800786B7A /* OrderedDictionary.h */,
-				7B3AA73A1AE689B900786B7A /* OrderedDictionary.m */,
-				7B3AA7351AE6898600786B7A /* AZObserversAndBinders.h */,
-				7B3AA7361AE6898600786B7A /* AZObserversAndBinders.m */,
-				7B3AA7311AE6893000786B7A /* objswitch.h */,
-				7B3AA7321AE6893000786B7A /* objswitch.m */,
-				7B3AA7291AE6890200786B7A /* NSObject+AssociatedDictionary.h */,
-				7B3AA72A1AE6890200786B7A /* NSObject+AssociatedDictionary.m */,
-				7B3AA72B1AE6890200786B7A /* ObjcAssociatedObjectHelpers.h */,
-				7B3AA72C1AE6890200786B7A /* ObjcAssociatedObjectHelpers.m */,
+				7B3AA6741AE6827500786B7A /* _ObjCKit.h */,
+				7B3AA6711AE6827500786B7A /* _ObjCKit */,
+				7B3AA73D1AE68B2500786B7A /* External */,
 				7B3AA6E91AE686FB00786B7A /* Categories */,
 				7B3AA7051AE686FB00786B7A /* Protocols */,
-				7B3AA6E71AE6861A00786B7A /* JREnum.h */,
-				7B3AA6BA1AE683D200786B7A /* NTBTask.h */,
-				7B3AA6BB1AE683D200786B7A /* NTBTask.m */,
-				7B3AA6AB1AE6839700786B7A /* Functional */,
 				7B3AA68D1AE682F900786B7A /* EXT */,
-				7B3AA6981AE682F900786B7A /* BaseModel */,
-				7B3AA68B1AE682C600786B7A /* _ObjC.h */,
-				7B3AA65D1AE680B100786B7A /* _ObjC.xcodeproj */,
-				7B3AA6711AE6827500786B7A /* _ObjCKit */,
 				7B3AA67E1AE6827600786B7A /* _ObjCKitTests */,
 				7B3AA6701AE6827500786B7A /* Products */,
 			);
@@ -303,7 +288,6 @@
 				7B3AA6D01AE6858500786B7A /* Protocols.h */,
 				7B3AA6D11AE6858500786B7A /* Protocols.m */,
 				7B3AA6D21AE6858500786B7A /* AtoZMacroDefines.h */,
-				7B3AA6741AE6827500786B7A /* _ObjCKit.h */,
 				7B3AA6BE1AE6841800786B7A /* _ObjCKit.pch */,
 				7B3AA6721AE6827500786B7A /* Supporting Files */,
 			);
@@ -420,6 +404,30 @@
 				7B3AA7091AE686FB00786B7A /* Rectlike.m */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		7B3AA73D1AE68B2500786B7A /* External */ = {
+			isa = PBXGroup;
+			children = (
+				7B3AA68B1AE682C600786B7A /* _ObjC.h */,
+				7B3AA65D1AE680B100786B7A /* _ObjC.xcodeproj */,
+				7B3AA7391AE689B800786B7A /* OrderedDictionary.h */,
+				7B3AA73A1AE689B900786B7A /* OrderedDictionary.m */,
+				7B3AA7351AE6898600786B7A /* AZObserversAndBinders.h */,
+				7B3AA7361AE6898600786B7A /* AZObserversAndBinders.m */,
+				7B3AA7311AE6893000786B7A /* objswitch.h */,
+				7B3AA7321AE6893000786B7A /* objswitch.m */,
+				7B3AA7291AE6890200786B7A /* NSObject+AssociatedDictionary.h */,
+				7B3AA72A1AE6890200786B7A /* NSObject+AssociatedDictionary.m */,
+				7B3AA72B1AE6890200786B7A /* ObjcAssociatedObjectHelpers.h */,
+				7B3AA72C1AE6890200786B7A /* ObjcAssociatedObjectHelpers.m */,
+				7B3AA6E71AE6861A00786B7A /* JREnum.h */,
+				7B3AA6BA1AE683D200786B7A /* NTBTask.h */,
+				7B3AA6BB1AE683D200786B7A /* NTBTask.m */,
+				7B3AA6AB1AE6839700786B7A /* Functional */,
+				7B3AA6981AE682F900786B7A /* BaseModel */,
+			);
+			name = External;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
